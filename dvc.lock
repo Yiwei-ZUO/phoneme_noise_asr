@@ -737,3 +737,333 @@ stages:
       hash: md5
       md5: bf33bcc59e7a0ac029f6dfa13b1ba2f7
       size: 87774
+  evaluate@en--5:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_-5db.jsonl --output results/metrics/en_-5db.json 
+      --lang en --snr-db -5
+    deps:
+    - path: data/preds/en/preds_-5db.jsonl
+      hash: md5
+      md5: a070d4dfeb9753097677226f582ebc8c
+      size: 66709
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_-5db.json
+      hash: md5
+      md5: f27eaaad849fec29683ff7ed4a8447f5
+      size: 52
+  evaluate@en-0:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_0db.jsonl --output results/metrics/en_0db.json --lang 
+      en --snr-db 0
+    deps:
+    - path: data/preds/en/preds_0db.jsonl
+      hash: md5
+      md5: 8c68f277d81b38098b99d40167ace4ba
+      size: 72060
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_0db.json
+      hash: md5
+      md5: 183a9137d1c443734053b86c5c81847a
+      size: 51
+  evaluate@en-5:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_5db.jsonl --output results/metrics/en_5db.json --lang 
+      en --snr-db 5
+    deps:
+    - path: data/preds/en/preds_5db.jsonl
+      hash: md5
+      md5: 6acafecc292c5d1b99280662155df9f9
+      size: 75833
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_5db.json
+      hash: md5
+      md5: 43205a526f14197f2d7c6edb0515d7a8
+      size: 52
+  evaluate@en-10:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_10db.jsonl --output results/metrics/en_10db.json 
+      --lang en --snr-db 10
+    deps:
+    - path: data/preds/en/preds_10db.jsonl
+      hash: md5
+      md5: f84ef72c1e3cb54ae9cbfc36e58682aa
+      size: 79408
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_10db.json
+      hash: md5
+      md5: 37678fcfeda08a1278c62f0f32314821
+      size: 53
+  evaluate@en-15:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_15db.jsonl --output results/metrics/en_15db.json 
+      --lang en --snr-db 15
+    deps:
+    - path: data/preds/en/preds_15db.jsonl
+      hash: md5
+      md5: e2fa427c1cfbe49f4436d7bfdc3d2d39
+      size: 83128
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_15db.json
+      hash: md5
+      md5: e2c319875d863f486b45bfce328aeaa2
+      size: 53
+  evaluate@en-20:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_20db.jsonl --output results/metrics/en_20db.json 
+      --lang en --snr-db 20
+    deps:
+    - path: data/preds/en/preds_20db.jsonl
+      hash: md5
+      md5: 9fa54b30de527ab1f5020fb93013d4e0
+      size: 85755
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_20db.json
+      hash: md5
+      md5: 7723ccc23d92a8495bcf29a9d3ef79a5
+      size: 53
+  evaluate@en-25:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_25db.jsonl --output results/metrics/en_25db.json 
+      --lang en --snr-db 25
+    deps:
+    - path: data/preds/en/preds_25db.jsonl
+      hash: md5
+      md5: 69c5e303a5d34a4c406abad0be5f3586
+      size: 87000
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_25db.json
+      hash: md5
+      md5: f02919e3a9ec7e3d0f99447f7425d7eb
+      size: 53
+  evaluate@en-30:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_30db.jsonl --output results/metrics/en_30db.json 
+      --lang en --snr-db 30
+    deps:
+    - path: data/preds/en/preds_30db.jsonl
+      hash: md5
+      md5: 49ee8deb4e8e2d62e300197437442df4
+      size: 87580
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_30db.json
+      hash: md5
+      md5: 0585121d75d321a552895141d2cd7360
+      size: 53
+  evaluate@en-35:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_35db.jsonl --output results/metrics/en_35db.json 
+      --lang en --snr-db 35
+    deps:
+    - path: data/preds/en/preds_35db.jsonl
+      hash: md5
+      md5: 08423b85addf6b10751314302ab5ef0e
+      size: 87724
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_35db.json
+      hash: md5
+      md5: b1ed53886ca3ad15d09b6a98cf6a6473
+      size: 53
+  evaluate@en-40:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/en/preds_40db.jsonl --output results/metrics/en_40db.json 
+      --lang en --snr-db 40
+    deps:
+    - path: data/preds/en/preds_40db.jsonl
+      hash: md5
+      md5: bf33bcc59e7a0ac029f6dfa13b1ba2f7
+      size: 87774
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/en_40db.json
+      hash: md5
+      md5: aa36de0582515329fe18a0a7f786209f
+      size: 53
