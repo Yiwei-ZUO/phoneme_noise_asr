@@ -1,7 +1,13 @@
 import argparse
 import json
 import os
+import yaml
 import matplotlib.pyplot as plt
+
+
+def load_params(params_file="params.yaml"):
+    with open(params_file) as f:
+        return yaml.safe_load(f)
 
 
 def plot(metrics_dir, output_path, langs, snr_levels):
@@ -60,7 +66,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--metrics-dir", required=True)
     parser.add_argument("--output",      required=True)
-    parser.add_argument("--langs",       required=True, nargs="+")
-    parser.add_argument("--snr-levels",  required=True, nargs="+", type=float)
+    parser.add_argument("--params",      default="params.yaml")
     args = parser.parse_args()
-    plot(args.metrics_dir, args.output, args.langs, args.snr_levels)
+
+    params = load_params(args.params)
+    plot(args.metrics_dir, args.output, params["langs"], params["snr_levels"])
