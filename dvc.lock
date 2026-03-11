@@ -1,0 +1,29 @@
+schema: '2.0'
+stages:
+  make_manifest@en:
+    cmd: pixi run python scripts/make_manifest.py --wav-dir data/raw/en/wav 
+      --transcripts data/raw/en/transcripts.tsv --lang en --output 
+      data/manifests/en/clean.jsonl
+    deps:
+    - path: data/raw/en/transcripts.tsv
+      hash: md5
+      md5: aef98803c4550ef730fbf90d1b23086c
+      size: 19070
+    - path: data/raw/en/wav
+      hash: md5
+      md5: 0d9dae426973b0ff8abe5278fa33bd6f.dir
+      size: 52801656
+      nfiles: 100
+    - path: scripts/make_manifest.py
+      hash: md5
+      md5: a30d607bfdf52d25af5ed12278ff9f19
+      size: 3562
+    params:
+      params.yaml:
+        langs:
+        - en
+    outs:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879

@@ -1,0 +1,17 @@
+stages:
+  make_manifest:
+    foreach: ${langs}  
+    do:
+      cmd: pixi run python scripts/make_manifest.py
+        --wav-dir data/raw/${item}/wav
+        --transcripts data/raw/${item}/transcripts.tsv
+        --lang ${item}
+        --output data/manifests/${item}/clean.jsonl
+      deps:
+        - scripts/make_manifest.py
+        - data/raw/${item}/wav
+        - data/raw/${item}/transcripts.tsv
+      params:
+        - langs   
+      outs:
+        - data/manifests/${item}/clean.jsonl
