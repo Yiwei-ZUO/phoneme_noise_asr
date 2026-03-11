@@ -1067,3 +1067,37 @@ stages:
       hash: md5
       md5: aa36de0582515329fe18a0a7f786209f
       size: 53
+  plot_results:
+    cmd: pixi run python scripts/plot_results.py --metrics-dir results/metrics 
+      --output results/figures/per_vs_snr.png --langs en --snr-levels -5 0 5 10 
+      15 20 25 30 35 40
+    deps:
+    - path: results/metrics/
+      hash: md5
+      md5: 252cbfcfe89d05f5b74d7bb5a72a9265.dir
+      size: 664
+      nfiles: 11
+    - path: scripts/plot_results.py
+      hash: md5
+      md5: bc5fc0e98bdabc1f4a9f3f3ae2e114a9
+      size: 2332
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/figures/per_vs_snr.png
+      hash: md5
+      md5: b6a4075290b9bcf3a28ab85a3d0324f8
+      size: 31734

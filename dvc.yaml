@@ -71,3 +71,18 @@ stages:
       - snr_levels
     outs:
       - results/metrics/${item.lang}_${item.snr}db.json
+
+  plot_results:
+    cmd: pixi run python scripts/plot_results.py
+      --metrics-dir results/metrics
+      --output results/figures/per_vs_snr.png
+      --langs en
+      --snr-levels -5 0 5 10 15 20 25 30 35 40
+    deps:
+      - scripts/plot_results.py
+      - results/metrics/
+    params:
+      - langs
+      - snr_levels
+    outs:
+      - results/figures/per_vs_snr.png
