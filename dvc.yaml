@@ -36,3 +36,20 @@ stages:
     outs:
       - data/manifests/${item.lang}/noisy_${item.snr}db.jsonl
       - data/noisy/${item.lang}/${item.snr}db
+
+
+  run_asr:
+    matrix:
+      lang: ${langs}
+      snr: ${snr_levels}
+    cmd: pixi run python scripts/run_asr.py
+      --input-manifest data/manifests/${item.lang}/noisy_${item.snr}db.jsonl
+      --output-manifest data/preds/${item.lang}/preds_${item.snr}db.jsonl
+    deps:
+      - scripts/run_asr.py
+      - data/manifests/${item.lang}/noisy_${item.snr}db.jsonl
+    params:
+      - langs
+      - snr_levels
+    outs:
+      - data/preds/${item.lang}/preds_${item.snr}db.jsonl

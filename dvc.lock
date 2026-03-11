@@ -407,3 +407,333 @@ stages:
       md5: 55f884a7f604efbf5b09d179846a6ffd.dir
       size: 49553872
       nfiles: 92
+  run_asr@en--5:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_-5db.jsonl --output-manifest 
+      data/preds/en/preds_-5db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_-5db.jsonl
+      hash: md5
+      md5: 862c928cdfd1e304d224eb97413ea312
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_-5db.jsonl
+      hash: md5
+      md5: a070d4dfeb9753097677226f582ebc8c
+      size: 66709
+  run_asr@en-0:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_0db.jsonl --output-manifest 
+      data/preds/en/preds_0db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_0db.jsonl
+      hash: md5
+      md5: d5089e236f1fc1fb79363cff8924e2e8
+      size: 60971
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_0db.jsonl
+      hash: md5
+      md5: 8c68f277d81b38098b99d40167ace4ba
+      size: 72060
+  run_asr@en-5:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_5db.jsonl --output-manifest 
+      data/preds/en/preds_5db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_5db.jsonl
+      hash: md5
+      md5: 9edeb8b714989846927fd943cdb4ee7d
+      size: 60971
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_5db.jsonl
+      hash: md5
+      md5: 6acafecc292c5d1b99280662155df9f9
+      size: 75833
+  run_asr@en-10:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_10db.jsonl --output-manifest 
+      data/preds/en/preds_10db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_10db.jsonl
+      hash: md5
+      md5: d9c4ac94f339730b483f536efb43e8f5
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_10db.jsonl
+      hash: md5
+      md5: f84ef72c1e3cb54ae9cbfc36e58682aa
+      size: 79408
+  run_asr@en-15:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_15db.jsonl --output-manifest 
+      data/preds/en/preds_15db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_15db.jsonl
+      hash: md5
+      md5: 96e2f299d5f819aa30043b5cab5f8aaf
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_15db.jsonl
+      hash: md5
+      md5: e2fa427c1cfbe49f4436d7bfdc3d2d39
+      size: 83128
+  run_asr@en-20:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_20db.jsonl --output-manifest 
+      data/preds/en/preds_20db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_20db.jsonl
+      hash: md5
+      md5: ded164a11cb14035e5389d5095adf0b3
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_20db.jsonl
+      hash: md5
+      md5: 9fa54b30de527ab1f5020fb93013d4e0
+      size: 85755
+  run_asr@en-25:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_25db.jsonl --output-manifest 
+      data/preds/en/preds_25db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_25db.jsonl
+      hash: md5
+      md5: 3b7d9b7eb303e3ce8219b4d40fa42c64
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_25db.jsonl
+      hash: md5
+      md5: 69c5e303a5d34a4c406abad0be5f3586
+      size: 87000
+  run_asr@en-30:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_30db.jsonl --output-manifest 
+      data/preds/en/preds_30db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_30db.jsonl
+      hash: md5
+      md5: f9a37616d94287747e38e38967608d8f
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_30db.jsonl
+      hash: md5
+      md5: 49ee8deb4e8e2d62e300197437442df4
+      size: 87580
+  run_asr@en-35:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_35db.jsonl --output-manifest 
+      data/preds/en/preds_35db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_35db.jsonl
+      hash: md5
+      md5: 9fef20fe704a1af32ae8656783339b25
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_35db.jsonl
+      hash: md5
+      md5: 08423b85addf6b10751314302ab5ef0e
+      size: 87724
+  run_asr@en-40:
+    cmd: pixi run python scripts/run_asr.py --input-manifest 
+      data/manifests/en/noisy_40db.jsonl --output-manifest 
+      data/preds/en/preds_40db.jsonl
+    deps:
+    - path: data/manifests/en/noisy_40db.jsonl
+      hash: md5
+      md5: 09a249f135759527b0a78b11fc1a737a
+      size: 61155
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: f81f7eff21de3291896916174da72d09
+      size: 3705
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en/preds_40db.jsonl
+      hash: md5
+      md5: bf33bcc59e7a0ac029f6dfa13b1ba2f7
+      size: 87774
