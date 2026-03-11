@@ -27,3 +27,383 @@ stages:
       hash: md5
       md5: 95ed7511b15592be70f31a8cd3a216c5
       size: 60879
+  add_noise@en--5:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db -5 --output-dir 
+      data/noisy/en/-5db --output-manifest data/manifests/en/noisy_-5db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_-5db.jsonl
+      hash: md5
+      md5: 862c928cdfd1e304d224eb97413ea312
+      size: 61155
+    - path: data/noisy/en/-5db
+      hash: md5
+      md5: b5a4fe06b459836814f4271a8918b713.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-0:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 0 --output-dir 
+      data/noisy/en/0db --output-manifest data/manifests/en/noisy_0db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_0db.jsonl
+      hash: md5
+      md5: d5089e236f1fc1fb79363cff8924e2e8
+      size: 60971
+    - path: data/noisy/en/0db
+      hash: md5
+      md5: 54e9b3bd82412ff25aab9607d03088a5.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-5:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 5 --output-dir 
+      data/noisy/en/5db --output-manifest data/manifests/en/noisy_5db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_5db.jsonl
+      hash: md5
+      md5: 9edeb8b714989846927fd943cdb4ee7d
+      size: 60971
+    - path: data/noisy/en/5db
+      hash: md5
+      md5: fe7cb8add998e09df5eb2eeac385bafe.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-10:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 10 --output-dir 
+      data/noisy/en/10db --output-manifest data/manifests/en/noisy_10db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_10db.jsonl
+      hash: md5
+      md5: d9c4ac94f339730b483f536efb43e8f5
+      size: 61155
+    - path: data/noisy/en/10db
+      hash: md5
+      md5: bbd5b4c77ecad38636a95831b328d3e4.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-15:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 15 --output-dir 
+      data/noisy/en/15db --output-manifest data/manifests/en/noisy_15db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_15db.jsonl
+      hash: md5
+      md5: 96e2f299d5f819aa30043b5cab5f8aaf
+      size: 61155
+    - path: data/noisy/en/15db
+      hash: md5
+      md5: 31ac1414cb2546a0c8c78fb6fab4a21f.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-20:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 20 --output-dir 
+      data/noisy/en/20db --output-manifest data/manifests/en/noisy_20db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_20db.jsonl
+      hash: md5
+      md5: ded164a11cb14035e5389d5095adf0b3
+      size: 61155
+    - path: data/noisy/en/20db
+      hash: md5
+      md5: 2ef5ede75e0a1a422ccc52e942689d38.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-25:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 25 --output-dir 
+      data/noisy/en/25db --output-manifest data/manifests/en/noisy_25db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_25db.jsonl
+      hash: md5
+      md5: 3b7d9b7eb303e3ce8219b4d40fa42c64
+      size: 61155
+    - path: data/noisy/en/25db
+      hash: md5
+      md5: 6171bc012362b51899dbca69d0cc5a41.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-30:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 30 --output-dir 
+      data/noisy/en/30db --output-manifest data/manifests/en/noisy_30db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_30db.jsonl
+      hash: md5
+      md5: f9a37616d94287747e38e38967608d8f
+      size: 61155
+    - path: data/noisy/en/30db
+      hash: md5
+      md5: c3a90d9499cf972e857f72192b9e5090.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-35:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 35 --output-dir 
+      data/noisy/en/35db --output-manifest data/manifests/en/noisy_35db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_35db.jsonl
+      hash: md5
+      md5: 9fef20fe704a1af32ae8656783339b25
+      size: 61155
+    - path: data/noisy/en/35db
+      hash: md5
+      md5: 80acefb2f73651051511cfcf60937629.dir
+      size: 49553872
+      nfiles: 92
+  add_noise@en-40:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/en/clean.jsonl --lang en --snr-db 40 --output-dir 
+      data/noisy/en/40db --output-manifest data/manifests/en/noisy_40db.jsonl
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: 95ed7511b15592be70f31a8cd3a216c5
+      size: 60879
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/en/noisy_40db.jsonl
+      hash: md5
+      md5: 09a249f135759527b0a78b11fc1a737a
+      size: 61155
+    - path: data/noisy/en/40db
+      hash: md5
+      md5: 55f884a7f604efbf5b09d179846a6ffd.dir
+      size: 49553872
+      nfiles: 92

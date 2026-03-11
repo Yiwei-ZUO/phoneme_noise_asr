@@ -15,3 +15,24 @@ stages:
         - langs   
       outs:
         - data/manifests/${item}/clean.jsonl
+
+
+  add_noise:
+    matrix:
+      lang: ${langs}
+      snr: ${snr_levels}
+    cmd: pixi run python scripts/add_noise.py
+      --clean-manifest data/manifests/${item.lang}/clean.jsonl
+      --lang ${item.lang}
+      --snr-db ${item.snr}
+      --output-dir data/noisy/${item.lang}/${item.snr}db
+      --output-manifest data/manifests/${item.lang}/noisy_${item.snr}db.jsonl
+    deps:
+      - scripts/add_noise.py
+      - data/manifests/${item.lang}/clean.jsonl
+    params:
+      - langs
+      - snr_levels
+    outs:
+      - data/manifests/${item.lang}/noisy_${item.snr}db.jsonl
+      - data/noisy/${item.lang}/${item.snr}db
