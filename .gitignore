@@ -1,0 +1,8 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+data/raw/
+data/noisy/
+data/preds/
+data/manifests/
+.DS_Store
