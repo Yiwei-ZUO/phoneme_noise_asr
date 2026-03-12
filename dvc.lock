@@ -22,6 +22,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
     outs:
     - path: data/manifests/en/clean.jsonl
       hash: md5
@@ -44,6 +45,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -82,6 +84,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -120,6 +123,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -158,6 +162,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -196,6 +201,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -234,6 +240,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -272,6 +279,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -310,6 +318,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -348,6 +357,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -386,6 +396,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -418,12 +429,13 @@ stages:
       size: 61155
     - path: scripts/run_asr.py
       hash: md5
-      md5: f81f7eff21de3291896916174da72d09
-      size: 3705
+      md5: 51cb66c56ce76d79baa9c92631423900
+      size: 3826
     params:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -451,12 +463,13 @@ stages:
       size: 60971
     - path: scripts/run_asr.py
       hash: md5
-      md5: f81f7eff21de3291896916174da72d09
-      size: 3705
+      md5: 51cb66c56ce76d79baa9c92631423900
+      size: 3826
     params:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -484,12 +497,13 @@ stages:
       size: 60971
     - path: scripts/run_asr.py
       hash: md5
-      md5: f81f7eff21de3291896916174da72d09
-      size: 3705
+      md5: 51cb66c56ce76d79baa9c92631423900
+      size: 3826
     params:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -517,12 +531,13 @@ stages:
       size: 61155
     - path: scripts/run_asr.py
       hash: md5
-      md5: f81f7eff21de3291896916174da72d09
-      size: 3705
+      md5: 0bdd19020fc2813552e864fe35a6bbee
+      size: 3516
     params:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -754,6 +769,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -787,6 +803,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -820,6 +837,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -853,6 +871,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -886,6 +905,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -919,6 +939,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -952,6 +973,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -985,6 +1007,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -1018,6 +1041,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -1051,6 +1075,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -1073,13 +1098,13 @@ stages:
     deps:
     - path: params.yaml
       hash: md5
-      md5: e71c4dadf35db944d42435f1dcd4e5c2
-      size: 119
+      md5: 24ee36e34118e798fab71a4e06da48f6
+      size: 126
     - path: results/metrics/
       hash: md5
-      md5: 252cbfcfe89d05f5b74d7bb5a72a9265.dir
-      size: 664
-      nfiles: 11
+      md5: 2ea61e3a113e7112e188ac5433296806.dir
+      size: 1328
+      nfiles: 21
     - path: scripts/plot_results.py
       hash: md5
       md5: c3c6bc9ff353ad308ab1d77b678a0779
@@ -1088,6 +1113,7 @@ stages:
       params.yaml:
         langs:
         - en
+        - fr
         snr_levels:
         - -5
         - 0
@@ -1102,5 +1128,841 @@ stages:
     outs:
     - path: results/figures/per_vs_snr.png
       hash: md5
-      md5: b6a4075290b9bcf3a28ab85a3d0324f8
-      size: 31734
+      md5: 09025876f419676ed1426a2c1e1ef183
+      size: 51391
+  make_manifest@fr:
+    cmd: pixi run python scripts/make_manifest.py --wav-dir data/raw/fr/wav 
+      --transcripts data/raw/fr/transcripts.tsv --lang fr --output 
+      data/manifests/fr/clean.jsonl
+    deps:
+    - path: data/raw/fr/transcripts.tsv
+      hash: md5
+      md5: ab4bd06452bf31fea65c621197951de7
+      size: 20577
+    - path: data/raw/fr/wav
+      hash: md5
+      md5: f3e9fd4c4353a51184434ae2387877fb.dir
+      size: 45698424
+      nfiles: 100
+    - path: scripts/make_manifest.py
+      hash: md5
+      md5: a30d607bfdf52d25af5ed12278ff9f19
+      size: 3562
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+    outs:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+  add_noise@fr--5:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db -5 --output-dir 
+      data/noisy/fr/-5db --output-manifest data/manifests/fr/noisy_-5db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_-5db.jsonl
+      hash: md5
+      md5: 076ba4765a52b996fd96955f7507bd18
+      size: 64289
+    - path: data/noisy/fr/-5db
+      hash: md5
+      md5: e5dc717f0de837797164dbd596f9dc75.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-0:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 0 --output-dir 
+      data/noisy/fr/0db --output-manifest data/manifests/fr/noisy_0db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_0db.jsonl
+      hash: md5
+      md5: b7757988edad67147f1e24212eb9f065
+      size: 64089
+    - path: data/noisy/fr/0db
+      hash: md5
+      md5: 6edc3bd51664c4a31bb15c5dfcc9e956.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-5:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 5 --output-dir 
+      data/noisy/fr/5db --output-manifest data/manifests/fr/noisy_5db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_5db.jsonl
+      hash: md5
+      md5: 8a4c6ba7952dabe2ac582867897deb3b
+      size: 64089
+    - path: data/noisy/fr/5db
+      hash: md5
+      md5: 9fba7d34be98acc68da09bfae25673b6.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-10:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 10 --output-dir 
+      data/noisy/fr/10db --output-manifest data/manifests/fr/noisy_10db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_10db.jsonl
+      hash: md5
+      md5: e36f01224f61f4de9ae877432ff54626
+      size: 64289
+    - path: data/noisy/fr/10db
+      hash: md5
+      md5: 20220a42ba464596cdd7d7b9b869b3eb.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-15:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 15 --output-dir 
+      data/noisy/fr/15db --output-manifest data/manifests/fr/noisy_15db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_15db.jsonl
+      hash: md5
+      md5: a4e56767fdd3c5affe9dbf171b425081
+      size: 64289
+    - path: data/noisy/fr/15db
+      hash: md5
+      md5: cea2e743d51ea38e447cf954018b95f1.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-20:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 20 --output-dir 
+      data/noisy/fr/20db --output-manifest data/manifests/fr/noisy_20db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_20db.jsonl
+      hash: md5
+      md5: 0e8a3e12b79d1c983bafb262479068a6
+      size: 64289
+    - path: data/noisy/fr/20db
+      hash: md5
+      md5: e904dab7f8941e66e832e16688088e48.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-25:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 25 --output-dir 
+      data/noisy/fr/25db --output-manifest data/manifests/fr/noisy_25db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_25db.jsonl
+      hash: md5
+      md5: f02d6573d8d8701517fc78e8303185f3
+      size: 64289
+    - path: data/noisy/fr/25db
+      hash: md5
+      md5: fa524b02d4b89edce8d63f3287f1c264.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-30:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 30 --output-dir 
+      data/noisy/fr/30db --output-manifest data/manifests/fr/noisy_30db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_30db.jsonl
+      hash: md5
+      md5: 86491ad6a9ad4ecc55e54f4c12b405f7
+      size: 64289
+    - path: data/noisy/fr/30db
+      hash: md5
+      md5: 0d8d06c4855f2558569812946d727ff3.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-35:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 35 --output-dir 
+      data/noisy/fr/35db --output-manifest data/manifests/fr/noisy_35db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_35db.jsonl
+      hash: md5
+      md5: 67feed6aa14051c352379baa3190c78d
+      size: 64289
+    - path: data/noisy/fr/35db
+      hash: md5
+      md5: 1a465c800d4d85d33188d698473bd005.dir
+      size: 45695024
+      nfiles: 100
+  add_noise@fr-40:
+    cmd: pixi run python scripts/add_noise.py --clean-manifest 
+      data/manifests/fr/clean.jsonl --lang fr --snr-db 40 --output-dir 
+      data/noisy/fr/40db --output-manifest data/manifests/fr/noisy_40db.jsonl
+    deps:
+    - path: data/manifests/fr/clean.jsonl
+      hash: md5
+      md5: 0e47b0487276d435671e8dd64b04ca42
+      size: 63989
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: fdd25d6bd41ac3d462cf5403d90ee70e
+      size: 3146
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/manifests/fr/noisy_40db.jsonl
+      hash: md5
+      md5: 6f555cb075896791f87040b60bebe664
+      size: 64289
+    - path: data/noisy/fr/40db
+      hash: md5
+      md5: d84558cd65ec02bd86f1d38d958f9f6a.dir
+      size: 45695024
+      nfiles: 100
+  run_asr@en:
+    cmd: pixi run python scripts/run_asr.py --input-dir data/manifests/en 
+      --output-dir data/preds/en --params params.yaml
+    deps:
+    - path: data/manifests/en/
+      hash: md5
+      md5: f3efc064a40bf22c1a4a8fdf27cd996d.dir
+      size: 672061
+      nfiles: 11
+    - path: params.yaml
+      hash: md5
+      md5: 24ee36e34118e798fab71a4e06da48f6
+      size: 126
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: 7797469c4fbe63f777cde81a13dcdcbc
+      size: 3922
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/en
+      hash: md5
+      md5: 9b0e84359bbd17db5f144a5838da4e2d.dir
+      size: 812971
+      nfiles: 10
+  run_asr@fr:
+    cmd: pixi run python scripts/run_asr.py --input-dir data/manifests/fr 
+      --output-dir data/preds/fr --params params.yaml
+    deps:
+    - path: data/manifests/fr/
+      hash: md5
+      md5: 4da65e645e76962706d11eb89e580567.dir
+      size: 706479
+      nfiles: 11
+    - path: params.yaml
+      hash: md5
+      md5: 24ee36e34118e798fab71a4e06da48f6
+      size: 126
+    - path: scripts/run_asr.py
+      hash: md5
+      md5: 7797469c4fbe63f777cde81a13dcdcbc
+      size: 3922
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: data/preds/fr
+      hash: md5
+      md5: 81f1788c96f004ea9b330e5d400339a9.dir
+      size: 836871
+      nfiles: 10
+  evaluate@fr--5:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_-5db.jsonl --output results/metrics/fr_-5db.json 
+      --lang fr --snr-db -5
+    deps:
+    - path: data/preds/fr/preds_-5db.jsonl
+      hash: md5
+      md5: 458d647a1929c7c5c85fca380802aae7
+      size: 69151
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_-5db.json
+      hash: md5
+      md5: 5a08bdf3e59e1341eea119ee4df69f94
+      size: 53
+  evaluate@fr-0:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_0db.jsonl --output results/metrics/fr_0db.json --lang 
+      fr --snr-db 0
+    deps:
+    - path: data/preds/fr/preds_0db.jsonl
+      hash: md5
+      md5: ba031815dbab3c8ef8c10b4667bb73c8
+      size: 74860
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_0db.json
+      hash: md5
+      md5: 33533b62ed37615e1ef351a11fb06d67
+      size: 52
+  evaluate@fr-5:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_5db.jsonl --output results/metrics/fr_5db.json --lang 
+      fr --snr-db 5
+    deps:
+    - path: data/preds/fr/preds_5db.jsonl
+      hash: md5
+      md5: c39c09ce69a325fec753fb0a98817b74
+      size: 80386
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_5db.json
+      hash: md5
+      md5: acc8b1a3bd4a99111ab07d20b0a187e5
+      size: 51
+  evaluate@fr-10:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_10db.jsonl --output results/metrics/fr_10db.json 
+      --lang fr --snr-db 10
+    deps:
+    - path: data/preds/fr/preds_10db.jsonl
+      hash: md5
+      md5: cdf2f26cd763d29f7eb7a8ba8b380b4b
+      size: 84100
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_10db.json
+      hash: md5
+      md5: 2755d14c913b22d6b9b9339c53952a35
+      size: 53
+  evaluate@fr-15:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_15db.jsonl --output results/metrics/fr_15db.json 
+      --lang fr --snr-db 15
+    deps:
+    - path: data/preds/fr/preds_15db.jsonl
+      hash: md5
+      md5: 5f0a2712ff7e5282731d1a8267f590e9
+      size: 86431
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_15db.json
+      hash: md5
+      md5: 29d70ce352a6d36bec5452729e061547
+      size: 53
+  evaluate@fr-20:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_20db.jsonl --output results/metrics/fr_20db.json 
+      --lang fr --snr-db 20
+    deps:
+    - path: data/preds/fr/preds_20db.jsonl
+      hash: md5
+      md5: 89bf806717c5f763c75c2f2be70660a0
+      size: 87753
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_20db.json
+      hash: md5
+      md5: a5bb08d29eb0fa3975245ad7857b15ac
+      size: 53
+  evaluate@fr-25:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_25db.jsonl --output results/metrics/fr_25db.json 
+      --lang fr --snr-db 25
+    deps:
+    - path: data/preds/fr/preds_25db.jsonl
+      hash: md5
+      md5: e504a9ae65da576e1935ec1d7dbb6c36
+      size: 88261
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_25db.json
+      hash: md5
+      md5: e1985a3b0eb6fb30865b0252a2449153
+      size: 52
+  evaluate@fr-30:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_30db.jsonl --output results/metrics/fr_30db.json 
+      --lang fr --snr-db 30
+    deps:
+    - path: data/preds/fr/preds_30db.jsonl
+      hash: md5
+      md5: 5a866bdd7dbfde3e4db30cafc65f07c3
+      size: 88535
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_30db.json
+      hash: md5
+      md5: dd5ed682d9098a462cf50813067df5e3
+      size: 53
+  evaluate@fr-35:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_35db.jsonl --output results/metrics/fr_35db.json 
+      --lang fr --snr-db 35
+    deps:
+    - path: data/preds/fr/preds_35db.jsonl
+      hash: md5
+      md5: 39bfd4188841bca1853c8c1b752bf14e
+      size: 88678
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_35db.json
+      hash: md5
+      md5: 89761c7e889fa1fecb2628c0b724206d
+      size: 53
+  evaluate@fr-40:
+    cmd: pixi run python scripts/evaluate.py --pred-manifest 
+      data/preds/fr/preds_40db.jsonl --output results/metrics/fr_40db.json 
+      --lang fr --snr-db 40
+    deps:
+    - path: data/preds/fr/preds_40db.jsonl
+      hash: md5
+      md5: d0092d99cb65d811381f2533c17b3639
+      size: 88716
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 60b16638fec4b561d7b984cba7d74196
+      size: 2786
+    params:
+      params.yaml:
+        langs:
+        - en
+        - fr
+        snr_levels:
+        - -5
+        - 0
+        - 5
+        - 10
+        - 15
+        - 20
+        - 25
+        - 30
+        - 35
+        - 40
+    outs:
+    - path: results/metrics/fr_40db.json
+      hash: md5
+      md5: b26efffed92ab2928c6bdca00dece3a0
+      size: 53
